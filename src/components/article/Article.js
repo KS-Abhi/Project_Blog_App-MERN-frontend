@@ -44,7 +44,7 @@ const Article = ({token}) => {
     return (
         <div className="blogPost">
             <h1 className="postTitle">{articleData.title}</h1>
-            <h2 className="postAuthor">By {articleData.name}</h2>
+            {/* <h2 className="postAuthor">By {articleData.name}</h2> */}
             <Upvote id={id} setArticleData={setArticleData} upvoters={articleData.upvoters} />
             <pre className="postDescr">{articleData.description}</pre>
             <Comments comments={articleData.comments} />
